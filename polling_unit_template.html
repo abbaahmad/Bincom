@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Results from Polling Units
+    </title>
+</head>
+
+<body>
+    <!-- <div class="search">
+        <form action="pollingunit">
+            <input type="text" placeholder="Enter Polling Unit name..." id="search">
+            <input type="submit" id="submit" value="Submit">  
+        </form>
+    </div> -->
+    <!-- <p>Data: {{data}}</p> -->
+                
+    <div>Polling Unit Name: {{data.name}}</div>
+    <div>Ward: {{data.ward}}</div>
+    <div>LGA: {{data.lga}}</div>
+    <div>State: {{data.state}}</div>
+    <table>
+        <th>Results</th>
+        {% for key, value in data.results %}
+        <tr>
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+
+</html>

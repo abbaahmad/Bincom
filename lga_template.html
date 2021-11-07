@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Results from LGA 
+    </title>
+</head>
+
+<body>
+    <div>Local government Area: {{data.lga}}</div>
+    <div>State: {{data.state}}</div>
+    <table>
+        <th>Results</th>
+        <tr>
+            {% for key, value in data.results %}
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+            {% endfor %}
+        </tr>
+    </table>
+</body>
+
+</html>

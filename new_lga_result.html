@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Results from Polling Units
+    </title>
+</head>
+
+<body>
+    <div class="newresult">
+        <form action="createresult">
+
+            <input type="text" placeholder="Enter Polling Unit name..." id="puname">
+            <input type="text" placeholder="Enter Ward ..." id="wardname">
+            <input type="text" placeholder="Enter LGA..." id="lga">
+        </form>
+    </div>
+    <table>
+        <th>Results</th>
+        <thead>
+            <tr>
+                <th>Party</td>
+                <td>Number of Votes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Enter Party..." id="partyname">
+                    <input type="text" placeholder="Enter Party scores..." id="partyscore">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input type="submit" id="submit" value="Submit">
+
+</body>
+
+</html>
